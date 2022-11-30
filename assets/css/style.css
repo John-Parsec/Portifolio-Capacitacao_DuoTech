@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'Copperplate', 'Copperplate Gothic Light';
+    src: url('../font/copperplate-gothic.otf') format('truetype');
+}
+
 body{
-    background-color: #3D434B;
+    background-color: #1B1C1E;/* #3D434B */
     color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Copperplate Gothic Light';
 }
 
 h1{
@@ -12,8 +20,14 @@ h2{
     text-decoration: underline;
 }
 
+#navbar{
+    position: fixed;
+    width:100%;
+}
+
 #navbar a{
-    display: inline;
+    display: flex;
+    flex-flow: wrap;
 }
 
 #navbar ul {
@@ -54,16 +68,28 @@ h2{
 
 #brand{
     background-image: url("../img/background.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 1451px;
-    height: 800px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 61.75em;
 }
 
 #about {
-    background-color: #57E4FC;
+    background-color: #1F1F1F; /*#57E4FC*/
     display: flex;
-    justify-content: start;
-    width: 1381px;
-    height: 333px;
+    flex-flow: row;
     align-items: center;
+    justify-content: space-between;
+    height: 21em;
+}
+
+#about h2{
+    padding-left: 3em;
+}
+
+#about p{
+    padding-left: 5em;
 }
